@@ -1,0 +1,487 @@
+
+    ###########
+    Monday, 10. June 2013 06:46PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:46PM
+    -----------
+    self.db.User.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:47PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:47PM
+    -----------
+    self.db.User.find()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:47PM
+    -----------
+    self.db.User.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:47PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:47PM
+    -----------
+    self.db.User.find()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:47PM
+    -----------
+    self.db.User.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:48PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:48PM
+    -----------
+    self.db.User.find()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:48PM
+    -----------
+    self.db.User.remove({"_id":ObjectId("51b39d486e95522e35bd5c56")})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:48PM
+    -----------
+    self.db.User.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:48PM
+    -----------
+    self.db.User.insert({'facebookuserId': None, 'added': datetime.datetime(2013, 6, 10, 18, 48, 11, 398000), '__instanceOf__': "<class 'models.User.User'>", 'token': 'a123b43c8411d7be30a5063ab5343d91', 'valid': True, 'password': '8f3024c578c029c5d9fe7af189dc1ab259813544', 'salt': u'\x1b\x1a\x0e\x07\x1e}\x18\x00Mx', 'email': 'i.am.chrismitchell@gmail.com'})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:49PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:49PM
+    -----------
+    self.db.User.find()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:49PM
+    -----------
+    self.db.User.remove({"_id":ObjectId("51b6115b6e9552476e730bc8")})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:49PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:50PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:50PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:51PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:51PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:53PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:53PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:53PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 06:53PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:18PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:18PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:21PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:21PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:26PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:26PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:28PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:28PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:29PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:29PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:29PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'added': datetime.datetime(2013, 6, 10, 19, 29, 39, 444809), 'availableFunds': 100, 'totalFunds': 100, 'token': '00324cbd8acb5ee47647177ea3c172c3', 'valid': True, 'password': '87ed54bcf4347c9b7c866cd3edca9dbed5e31f86', 'salt': u'lWTzgZJDHQ(', 'email': 'i.am.chrismitchell@gmail.com'})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:30PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 07:30PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:28PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:28PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:28PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'added': datetime.datetime(2013, 6, 10, 21, 28, 7, 655766), 'pendingFunds': 0, 'totalFunds': 100, 'token': '6e79646ad1e1dcb0e83dc1a7955b6d4d', 'valid': True, 'password': 'b92dadac5251bdce5be3efe0bc567dd075397bff', 'salt': u"$\x05{\x12~\x15}>~$'\x19", 'email': 'i.am.chrismitchell@gmail.com'})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:28PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:28PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:28PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'added': datetime.datetime(2013, 6, 10, 21, 28, 32, 947881), 'pendingFunds': 0, 'totalFunds': 100, 'token': 'ade91d6712f8fbade8e3329b625cd34f', 'valid': True, 'password': '9813917cfdcda0c4839b353cc577eb22b8de625e', 'salt': u'p\x1a\\=Pl+\x1bi>', 'email': 'i.am.chrismitchell@gmail.com'})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:31PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:31PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:31PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'added': datetime.datetime(2013, 6, 10, 21, 31, 52, 940916), 'pendingFunds': 0, 'totalFunds': 100, 'token': '877f4a75da710e43e8a2217ef80651dd', 'valid': True, 'password': '2a87d8b8dd59724418e6936131ac04ef45fa08b4', 'salt': u'Pu[\x03x\x0efQep', 'email': 'i.am.chrismitchell@gmail.com'})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:34PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:34PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:34PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'added': datetime.datetime(2013, 6, 10, 21, 34, 14, 39205), 'pendingFunds': 0, 'totalFunds': 100, 'token': '43d8327edb571bd1b5468e09a1b425d7', 'valid': True, 'password': 'c49b2e2fbf5c016caca898121c037e613a386cad', 'salt': u';4\x026\x05\x00\x1e\n|', 'email': 'i.am.chrismitchell@gmail.com'})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:37PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:37PM
+    -----------
+    self.db.Odds.insert({'__instanceOf__': "<class 'models.Models.Odds'>", 'name': '2/1', 'multiplyBy': 2})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:37PM
+    -----------
+    self.db.Odds.insert({'__instanceOf__': "<class 'models.Models.Odds'>", 'name': '5/1', 'multiplyBy': 5})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:37PM
+    -----------
+    self.db.Odds.insert({'__instanceOf__': "<class 'models.Models.Odds'>", 'name': '10/1', 'multiplyBy': 10})
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:37PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Monday, 10. June 2013 09:37PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'added': datetime.datetime(2013, 6, 10, 21, 37, 39, 862335), 'pendingFunds': 0, 'totalFunds': 100, 'token': '98fb86fc307fdba9bafd3ff0116f8823', 'valid': True, 'password': '236d452416b7a75298daa88b8fb21900a9d0a6e6', 'salt': u'}mn^\x19a\x01,\x0b', 'email': 'i.am.chrismitchell@gmail.com'})
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:49PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:49PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:49PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:49PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:50PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:50PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:50PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:50PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:50PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, 'username': 'asdf', 'added': datetime.datetime(2013, 6, 12, 19, 50, 52, 712463), 'pendingFunds': 0, 'totalFunds': 100, 'token': 'ec6c32dcf5581cbb59e622de01385300', 'valid': True, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'password': 'beb4f42749ac3c64fc82d8416eac1547091a6512', 'salt': u'\x0f,n\x05l@\x01f"d\x1f', 'email': 'asdf'})
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:52PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:52PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, 'username': 'asdf', 'added': datetime.datetime(2013, 6, 12, 19, 52, 17, 697248), 'pendingFunds': 0, 'totalFunds': 100, 'token': '', 'valid': True, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'password': 'asdf', 'salt': '', 'email': 'asdf'})
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:52PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 07:52PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, 'username': 'asdf', 'added': datetime.datetime(2013, 6, 12, 19, 52, 37, 295295), 'pendingFunds': 0, 'totalFunds': 100, 'token': 'b9419a09011428070b506eaa8f4e6354', 'valid': True, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'password': '60e56b2b4ab669c148c1c779c902be43cc43ba8e', 'salt': u"hA\x07\x01kT\x0e'7Jn~8", 'email': 'asdf'})
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 08:54PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 08:54PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 08:54PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, 'username': 'Chris', 'added': datetime.datetime(2013, 6, 12, 20, 54, 43, 584838), 'pendingFunds': 0, 'totalFunds': 100, 'token': '4d121d4ffe2298a8f1094d4ce913674a', 'valid': True, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'password': 'cb20bf39a17d6a5220a76290053b03f4e745ac0d', 'salt': u'd$XU];p\x18=N\x0e', 'email': 'i.am.chrismitchell@gmail.com'})
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 08:54PM
+    -----------
+    self.db.PredictionsUser.insert({'facebookuserId': None, 'username': 'Mitchy', 'added': datetime.datetime(2013, 6, 12, 20, 54, 43, 586619), 'pendingFunds': 0, 'totalFunds': 100, 'token': '3c7fbc627f26138fb04b401f305b896a', 'valid': True, '__instanceOf__': "<class 'models.Models.PredictionsUser'>", 'password': '75fc898d741311198c9045cba06b3ccc8967bebc', 'salt': u'C\x11\x12]J*\x08S-5', 'email': 'milchardo@hotmail.co.uk'})
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 08:54PM
+    -----------
+    self.db.Odds.find().count()
+    ###########
+    
+    ###########
+    Wednesday, 12. June 2013 08:54PM
+    -----------
+    self.db.PredictionsUser.find().count()
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 07:21PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 07:21PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 07:21PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 07:25PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 07:26PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 07:26PM
+    -----------
+    self.db.PredictionsUser.find()
+    ###########
+    

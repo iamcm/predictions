@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <title>Predictions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Le styles -->
+    <link href="static/css/bootstrap.css" rel="stylesheet">
+    <link href="static/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="static/jquery-ui-1.10.3.custom/css/smoothness/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+    <link href="static/css/generic.css" rel="stylesheet">
+    <link href="static/fonts/stylesheet.css" rel="stylesheet">
+    <link href="static/css/site.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="static/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="static/assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="static/assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="static/assets/ico/favicon.png">
+        
+    <script type="t/template" id="eventListTpl">
+        
+        {{@events}}
+        <div class="event-row rc4 p10 bs">
+            <a href="#/event/{{=_val._id}}">
+                {{=_val.title}}
+            </a>
+
+            {{_val.ends}}
+            <span class="pull-right">Closing date: {{=_val.ends}}</span>
+            {{/_val.ends}}
+
+            {{_val.pendingBetAmount}}
+            <span class="pull-right greyout px10">Pending bet: £{{=_val.pendingBetAmount}}</span>            
+            {{/_val.pendingBetAmount}}
+        </div>
+        {{/@events}}
+        
+    </script>
+        
+    <script type="t/template" id="communityListTpl">
+        
+        {{@communities}}
+        <div class="event-row rc4 p10 bs">
+            <a href="#/community/events/{{=_val._id}}">
+                {{=_val.name}}
+            </a>
+        </div>
+        {{/@communities}}
+        
+    </script>
+
+    <script type="t/template" id="resultListTpl">
+        
+        <table class="table table-striped">
+            <colgroup>
+                <col width="5%" />
+                <col width="55%" />
+                <col width="20%" />
+                <col width="10%" />
+                <col width="10%" />
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>Event title</th>
+                <th>Date</th>
+                <th>Bet amount</th>
+                <th>Winnings</th>
+            </tr>
+            {{@results}}
+                <tr>
+                    <td>
+                        {{_val.success}}
+                        <button class="btn-success"></button>
+                        {{:_val.success}}
+                        <button class="btn-danger"></button>
+                        {{/_val.success}}
+                    </td>
+                    <td>
+                        {{_val.event.ended}}
+                            <a href="#/result/{{=_val.event._id}}">{{=_val.event.title}}</a>
+                        {{:_val.event.ended}}
+                            {{=_val.event.title}}
+                        {{/_val.event.ended}}
+
+                    </td>
+                    <td>{{=_val.added}}</td>
+                    <td>£ {{=_val.amount}}</td>
+                    <td>
+                        £
+                        {{_val.winnings}}
+                            {{=_val.winnings}}
+                        {{:_val.winnings}}
+                        0
+                        {{/_val.winnings}}
+                    </td>
+                </tr>
+            {{/@results}}
+        </table>
+
+    </script>
+
+    <script type="t/template" id="eventResultTpl">
+
+        <h3>{{=event.title}}</h3>
+        <p>{{=event.description}}</p>
+        
+        <table class="table table-striped">
+            <colgroup>
+                <col width="5%" />
+                <col width="55%" />
+                <col width="20%" />
+                <col width="10%" />
+                <col width="10%" />
+            </colgroup>
+            <tr>
+                <th></th>
+                <th>Event title</th>
+                <th>Date</th>
+                <th>Bet amount</th>
+                <th>Winnings</th>
+            </tr>
+            {{@bets}}
+                <tr>
+                    <td>
+                        {{_val.success}}
+                        <button class="btn-success"></button>
+                        {{:_val.success}}
+                        <button class="btn-danger"></button>
+                        {{/_val.success}}
+                    </td>
+                    <td>{{=_val.username}}</td>
+                    <td>{{=_val.choice.title}} ({{=_val.choice.odds.name}})</td>
+                    <td>£{{=_val.amount}}</td>
+                    <td>
+                        £
+                        {{_val.winnings}}
+                            {{=_val.winnings}}
+                        {{:_val.winnings}}
+                        0
+                        {{/_val.winnings}}
+                    </td>
+                </tr>
+            {{/@bets}}
+        </table>
+
+    </script>
+
+    <script type="t/template" id="eventTpl">
+        {{canAddResult}}
+        <div class="well center">
+            <a href="#/event/{{=event._id}}/result/add" class="btn btn-primary">Add Result</a>
+        </div>
+        {{/canAddResult}}
+
+        <h3>{{=event.title}}</h3>
+        <p>{{=event.description}}</p>
+        
+        <form autocomplete="off" class="form-horizontal py10" id="formAddBet" method="post" action="/bet/add">
+            <input type="hidden" name="eventId" value="{{=event._id}}" />
+
+            <div class="control-group">
+                <label class="control-label">Choice</label>
+                <div class="controls">
+                    {{@event.choices}}
+                        <label class="radio">
+                            <input type="radio" name="choiceId" value="{{=_val._id}}"> {{=_val.title}} ({{=_val.odds.name}})
+                        </label>
+                    {{/@event.choices}}
+                </div>
+            </div>
+
+            <div class="control-group">
+                <label class="control-label" for="amount">Bet amount</label>
+                <div class="controls">
+                    <select id="amount" name="amount">
+                        <option value="1">£1</option>
+                        <option value="2">£2</option>
+                        <option value="5">£5</option>
+                        <option value="10">£10</option>
+                        <option value="50">£50</option>
+                        <option value="100">£100</option>
+                        <option value="1000">£1000</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="control-group">
+                <div class="controls">
+                    <input type="submit" class="btn" id="submit" value="Place bet" />
+                </div>
+            </div>
+        </form>
+    </script>
+
+    <script type="t/template" id="resultTpl">
+        <h3>{{=event.title}}</h3>
+        <p>{{=event.description}}</p>
+        
+        <form autocomplete="off" class="form-horizontal" id="formAddResult" method="post">
+            <input type="hidden" name="eventId" value="{{=event._id}}" />
+
+            {{@event.choices}}
+                <div class="control-group">
+                    <div class="controls">
+                        <label class="radio">
+                            <input type="radio" name="choiceId" value="{{=_val._id}}"> {{=_val.title}}
+                        </label>
+                    </div>
+                </div>
+            {{/@event.choices}}
+
+            <div class="control-group">
+                <div class="controls">
+                    <input type="submit" class="btn" id="submit" value="Add result" />
+                </div>
+            </div>
+        </form>
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container-narrow">
+
+        <div class="masthead muted">
+            <ul class="nav nav-pills pull-right">
+                <li id="navEvents">
+                    <a href="#/home">Events</a>
+                </li>
+                <li id="navBets">
+                    <a href="#/results">My Bets</a>
+                </li>
+                <li id="navCommunities">
+                    <a href="#/communities">Communities</a>
+                </li>
+                <li>
+                    <a id="logoutLink" href='#'>Logout</a>
+                </li>
+            </ul>
+            <h3 >Predictions</h3>
+            <div>
+                Hi <span id="usernameContainer">there!</span> 
+                <br />
+                Funds: <span id="totalFunds"></span> (<span id="pendingFunds"></span>) 
+            </div>
+        </div>
+
+        <hr>
+
+        <div>
+
+            <div class="container-fluid page" id="pageHome" data-active-menu-item="navEvents">
+                <div>
+                    <a href="#/event/add" class="btn btn-primary right">Add an event</a>
+                    <div class="clear p5"></div>
+                </div>
+                <div id="events"></div>
+            </div>
+
+            <div class="container-fluid page" id="pageResults" data-active-menu-item="navBets">
+                <div id="results"></div>
+            </div>
+
+            <div class="container-fluid page" id="pageSingleEvent" data-active-menu-item="navEvents">
+                <div class="row-fluid">
+                    <div class="span12" id="singleEventContainer"></div>
+                </div>
+            </div>
+
+            <div class="container-fluid page" id="pageSingleEventResult" data-active-menu-item="navEvents">
+                <div class="row-fluid">
+                    <div class="span12" id="singleEventResultContainer"></div>
+                </div>
+            </div>
+
+            <div class="container-fluid page" id="pageSingleResult" data-active-menu-item="navBets">
+                <div class="row-fluid">
+                    <div class="span12" id="singleResultContainer"></div>
+                </div>
+            </div>
+
+            <div class="container-fluid page" id="pageAddEvent" data-active-menu-item="navEvents">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <form autocomplete="off" class="form-horizontal" id="formAddEvent" method="post">
+                            <div class="control-group">
+                                <label class="control-label" for="inputTitle">Title</label>
+                                <div class="controls">
+                                    <input type="text" id="inputTitle" name="title" placeholder="Title">
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label" for="inputDescription">Description</label>
+                                <div class="controls">
+                                    <textarea id="inputDescription" name="description" placeholder="Description"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label" for="inputDescription">Choices</label>
+                                <div class="controls"  id="choicesContainer">
+                                    <div>
+                                        <span id="choicesContent">
+                                            <input type="text" name="choice[]" placeholder="Choice" class="inline">
+                                            <div id="oddsContainer" class="inline"></div>
+                                        </span>
+                                        <a href="#" id="addChoiceAnchor">Add choice</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label" for="inputDescription">End date</label>
+                                <div class="controls">
+                                    <div id="choicesContainer">
+                                        <input type="text" name="ends" placeholder="End date" class="datepicker">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label class="control-label" for="inputCommunity">Community</label>
+                                <div class="controls">
+                                    <div id="communitiesContainer"></div>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input type="submit" class="btn" id="submit" value="Add" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid page" id="pageCommunities" data-active-menu-item="navCommunities">
+                <div>
+                    <a href="#/community" class="btn btn-primary right">Add a community</a>
+                    <div class="clear p5"></div>
+                </div>
+                <div id="communityListContainer"></div>                
+            </div>
+
+
+            <div class="container-fluid page" id="pageAddCommunity" data-active-menu-item="navCommunities">
+                <div class="row-fluid">
+                    <div class="span12">
+                        <form autocomplete="off" class="form-horizontal" id="formAddCommunity" method="post">
+                            <div class="control-group">
+                                <label class="control-label" for="inputName">Name</label>
+                                <div class="controls">
+                                    <input type="text" id="inputTitle" name="name" placeholder="Name">
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="controls">
+                                    <label class="checkbox">
+                                        <input type="checkbox" name="public" value="1" />
+                                        Publicly searchable
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input type="submit" class="btn" id="submit" value="Add" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer">
+            <p>Predictions</p>
+        </div>
+
+    </div> 
+
+
+    <script src="static/js/t.min.js"></script>
+    <script src="static/js/jquery.js"></script>
+    <script src="static/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="static/js/path.min.js"></script>
+    <script src="static/js/bootstrap.js"></script>
+    <script src="static/js/util.js"></script>
+    <script src="static/js/site.js"></script>
+
+</body>
+</html>
+
+

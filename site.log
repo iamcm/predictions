@@ -1,0 +1,475 @@
+
+    ###########
+    Thursday, 13. June 2013 10:27PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 16, 50, 528000), 'publicId': u'f32d6296ee6a8d233d9b2fedb7233816b1a7e9c4', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 27, 56, 290222), 'userId': ObjectId('51b8d2036e9552196cf61913'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba36c26e95524fcf903ded'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:27PM
+    -----------
+    self.db.User4Community.find({'user._id': ObjectId('51b8d2036e9552196cf61913')})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:27PM
+    -----------
+    self.db.Community.find({'$or': [{'public': True}, {'_id': {'$in': []}}]}).sort([('name', 1)])
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:27PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 16, 50, 528000), 'publicId': u'f32d6296ee6a8d233d9b2fedb7233816b1a7e9c4', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 27, 56, 310581), 'userId': ObjectId('51b8d2036e9552196cf61913'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba36c26e95524fcf903ded'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:27PM
+    -----------
+    self.db.PredictionsUser.find_one({"_id":ObjectId("51b8d2036e9552196cf61913")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:31PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 16, 50, 528000), 'publicId': u'f32d6296ee6a8d233d9b2fedb7233816b1a7e9c4', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 31, 54, 600402), 'userId': ObjectId('51b8d2036e9552196cf61913'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba36c26e95524fcf903ded'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:31PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 16, 50, 528000), 'publicId': u'f32d6296ee6a8d233d9b2fedb7233816b1a7e9c4', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 31, 54, 600402), 'userId': ObjectId('51b8d2036e9552196cf61913'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': False, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba36c26e95524fcf903ded'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.PredictionsUser.find_one({"_id":ObjectId("51b8d2036e9552196cf61912")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 32, 57, 686334), 'publicId': '9f74841394992d1dbc522a54e847c511bb42a3cc', 'ip': '127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 32, 57, 686359), 'userId': ObjectId('51b8d2036e9552196cf61912'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': 'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba3a896e955251bda75273'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 32, 57, 686000), 'publicId': u'9f74841394992d1dbc522a54e847c511bb42a3cc', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 32, 57, 791367), 'userId': ObjectId('51b8d2036e9552196cf61912'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba3a896e955251bda75273'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Event.find({'ended': False, 'communityId': None}).sort([('ends', 1)])
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba299f6e955249003a01f3"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba299f6e955249003a01f3")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba299f6e955249003a01f4"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba299f6e955249003a01f4")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba29ca6e9552491afd0f11"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba29ca6e9552491afd0f11")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba29ca6e9552491afd0f12"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba29ca6e9552491afd0f12")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba2a5c6e9552491afd0f14"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba2a5c6e9552491afd0f14")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba2a5c6e9552491afd0f15"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba2a5c6e9552491afd0f15")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba2af86e955249b839b057"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba2af86e955249b839b057")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba2af86e955249b839b058"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba2af86e955249b839b058")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba2d876e95524a948bf556"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba2d876e95524a948bf556")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51ba2d876e95524a948bf557"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51ba2d876e95524a948bf557")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Bet.find({'userId': ObjectId('51b8d2036e9552196cf61912')})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51b8d4366e955219f57fa019"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51b8d4366e955219f57fa019")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51b8d3f16e955219f57fa014"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51b8d3f16e955219f57fa014")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c71a"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c71a")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Choice(self.db, ObjectId("51b8d40c6e955219f57fa017"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Choice.find_one({"_id":ObjectId("51b8d40c6e955219f57fa017")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    models.Models.Odds(self.db, ObjectId("51b639136e955258d683c719"))
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Odds.find_one({"_id":ObjectId("51b639136e955258d683c719")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 32, 57, 686000), 'publicId': u'9f74841394992d1dbc522a54e847c511bb42a3cc', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 32, 57, 845194), 'userId': ObjectId('51b8d2036e9552196cf61912'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba3a896e955251bda75273'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.PredictionsUser.find_one({"_id":ObjectId("51b8d2036e9552196cf61912")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 32, 57, 686000), 'publicId': u'9f74841394992d1dbc522a54e847c511bb42a3cc', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 32, 58, 911176), 'userId': ObjectId('51b8d2036e9552196cf61912'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba3a896e955251bda75273'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.User4Community.find({'user._id': ObjectId('51b8d2036e9552196cf61912')})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:32PM
+    -----------
+    self.db.Community.find({'$or': [{'public': True}, {'_id': {'$in': [ObjectId('51ba25ba6e9552474d099e2f'), ObjectId('51ba38726e955250610deebe')]}}]}).sort([('name', 1)])
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 32, 57, 686000), 'publicId': u'9f74841394992d1dbc522a54e847c511bb42a3cc', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 33, 21, 92642), 'userId': ObjectId('51b8d2036e9552196cf61912'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba3a896e955251bda75273'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.User4Community.find({'user._id': ObjectId('51b8d2036e9552196cf61912')})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.Community.find({'$or': [{'public': True}, {'_id': {'$in': [u'51ba25ba6e9552474d099e2f', u'51ba38726e955250610deebe']}}]}).sort([('name', 1)])
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 32, 57, 686000), 'publicId': u'9f74841394992d1dbc522a54e847c511bb42a3cc', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 33, 21, 116697), 'userId': ObjectId('51b8d2036e9552196cf61912'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba3a896e955251bda75273'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.PredictionsUser.find_one({"_id":ObjectId("51b8d2036e9552196cf61912")})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 32, 57, 686000), 'publicId': u'9f74841394992d1dbc522a54e847c511bb42a3cc', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 33, 30, 868867), 'userId': ObjectId('51b8d2036e9552196cf61912'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba3a896e955251bda75273'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.User4Community.find({'user._id': ObjectId('51b8d2036e9552196cf61912')})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.Community.find({'$or': [{'public': True}, {'_id': {'$in': [ObjectId('51ba25ba6e9552474d099e2f'), ObjectId('51ba38726e955250610deebe')]}}]}).sort([('name', 1)])
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.Session.save({'added': datetime.datetime(2013, 6, 13, 22, 32, 57, 686000), 'publicId': u'9f74841394992d1dbc522a54e847c511bb42a3cc', 'ip': u'127.0.0.1', 'expires': datetime.datetime(2013, 6, 20, 21, 33, 30, 891127), 'userId': ObjectId('51b8d2036e9552196cf61912'), '__instanceOf__': "<class 'models.Session.Session'>", 'valid': True, 'userAgent': u'Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.68 Safari/537.17', '_id': ObjectId('51ba3a896e955251bda75273'), 'data': False})
+    ###########
+    
+    ###########
+    Thursday, 13. June 2013 10:33PM
+    -----------
+    self.db.PredictionsUser.find_one({"_id":ObjectId("51b8d2036e9552196cf61912")})
+    ###########
+    
